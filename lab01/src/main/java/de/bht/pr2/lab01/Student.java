@@ -22,5 +22,20 @@ public class Student {
    */
   public Student(String dataRow) {
     // TODO: Here goes your code ...
+    String[] data = dataRow.split(",");
+    
+
+    this.name = data[0];  // Name (z.B. "Anna Alt")
+    this.registrationNumber = Integer.parseInt(data[1]);  // Matrikelnummer (z.B. "70001")
+    this.courseOfStudies = data[2];  // Studiengang (z.B. "Medieninformatik")
   }
+
+  public void displayStudentInfo() {
+    System.out.println("Name:" + name);
+    System.out.println("Matrikelnummer"+ registrationNumber);
+    System.out.println("Studiengang"+ courseOfStudies);
+  }
+
+  
+  
 }

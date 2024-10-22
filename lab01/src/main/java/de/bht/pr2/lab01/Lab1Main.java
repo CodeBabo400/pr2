@@ -8,6 +8,7 @@ import java.util.List;
  */
 public class Lab1Main {
 
+
   public static void main(String[] args) {
     // Daten fuer Studierenden als Strings
     List<String> data = new ArrayList<String>();
@@ -49,9 +50,14 @@ public class Lab1Main {
     }
 
     // Print all students which could be parsed
-    System.out.println("List of Student objects:");
+    //System.out.println("List of Student objects:");
     for (Student student : students) {
-      System.out.println(student);
+     // students.displayStudentInfo();
+      
     }
+    StudentPraseExeption praseStudent = new StudentPraseExeption();
+    praseStudent.kat();
+    
+
   }
 }
